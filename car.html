@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Taller 4 - DIU</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link
+        href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <h1 class="site-heading text-center text-faded d-none d-lg-block">
+            <span class="site-heading-upper text-primary mb-3">APRENDIENDO A PROGRAMAR</span>
+            <span class="site-heading-lower">HTML</span>
+        </h1>
+    </header>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.html">Comienza a programar en HTML</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index.html">Definición</a>
+                    </li>
+                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="car.html">Características</a>
+                    </li>
+                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="exam.html">Ejemplos</a></li>
+                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="ref.html">Referencias</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="page-section about-heading">
+        <div class="container">
+            <img class="img-fluid rounded about-heading-img mb-3 mb-lg-0" src="assets/img/about.jpg" alt="..." />
+            <div class="about-heading-content">
+                <div class="row">
+                    <div class="col-xl-9 col-lg-10 mx-auto">
+                        <div class="bg-faded rounded p-5">
+                            <h2 class="section-heading mb-4">
+                                <span class="section-heading-lower">Características de un documento HTML</span>
+                            </h2>
+                            <div>
+                                <p class="mb-0">Las etiquetas en un documento HTML, no son útiles por sí solas tienen
+                                    que tener una estructura y existe una jerarquía de etiquetas presente en todo el
+                                    documento HTML. Desconocer este aspecto de las etiquetas puede dañar por completo el
+                                    diseño de la página web.
+                                </p>
+
+                                <pre class="notranslate">&lt;!DOCTYPE html&gt;
+                                &lt;html&gt;
+                                  &lt;head&gt;
+                                    &lt;meta charset="utf-8"&gt;
+                                    &lt;title&gt;Mi pagina de prueba&lt;/title&gt;
+                                  &lt;/head&gt;
+                                  &lt;body&gt;
+                                    &lt;img src="images/firefox-icon.png" alt="Mi imagen de prueba"&gt;
+                                  &lt;/body&gt;
+                                &lt;/html&gt;</pre>
+
+                                <p>Se tienen:</p>
+
+                                <ul>
+                                    <li><code>&lt;!DOCTYPE html&gt;</code> Nos indica que es un tipo de documento HTML,
+                                        es por otra parte una etiqueta que no tiene cierre.</li>
+                                    <li><code>&lt;html&gt;&lt;/html&gt;</code> — el elemento
+                                        <code>&lt;html&gt;</code></a>. Esta etiqueta encierra todo lo que debe contener
+                                        el documento, tiene dos partes claramente diferenciadas el <strong>head</strong>
+                                        y el <strong>body</strong> es conocido también como el elemento raíz (root).
+                                    </li>
+                                    <li><code>&lt;head&gt;&lt;/head&gt;</code> — el elemento
+                                        <code>&lt;head&gt;</code></a>. Es una especie de contenedor de todo aquello que
+                                        se incluye en la página y no puede ser visto por los visitantes de la misma.
+                                        Incluye palabras claves, estilos, etc.
+                                    </li>
+                                    <li><code>&lt;meta charset="utf-8"&gt;</code> — <a><code>&lt;meta&gt;</code></a>.
+                                        Especifica que caracteres se pueden utilizar en este documento.
+                                    </li>
+                                    <li><code>&lt;title&gt;&lt;/title&gt;</code> — el elemento
+                                        <a><code>&lt;title&gt;</code></a>establece el título la página web, el cual
+                                        aparece en la pestaña o
+                                        en la barra de título del navegador, y se usa para describir la página cuando es
+                                        añadida a los marcadores o como favorita.
+                                    </li>
+                                    <li><code>&lt;body&gt;&lt;/body&gt;</code> — el elemento
+                                        <a><code>&lt;body&gt;</code></a>.
+                                        Encierra <em>todo</em> el contenido que deseamos mostrar a los usuarios web que
+                                        visiten la página, ya sea texto, imágenes, videos, juegos, pistas de audio
+                                        reproducibles, y demás.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="page-section clearfix">
+        <div class="container">
+            <div class="intro">
+                <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="assets/img/images_example.jpg" alt="..." />
+                <div class="intro-text left-0 text-justify bg-faded p-5 rounded">
+                    <h2 class="section-heading mb-4">
+                        <span class="section-heading-upper">¿Y cómo introducimos Imágenes?</span>
+                        <span class="section-heading-lower">IMÁGENES</span>
+                    </h2>
+                    <p class="mb-3">Las imágenes tienen dos atributos: <strong>src</strong> y <strong>alt</strong>, en
+                        los cuales el primero <strong>src</strong> contiene una ruta o ubicación de la imagen y el
+                        segundo <strong>alt</strong> un texto alternativo que describe la imagen para personas no
+                        videntes. En otros casos el atributo <strong>alt</strong> cuando se produce un error y no se
+                        carga la imagen, presenta este texto en vez de la imagen.</p>
+
+                    <pre class="notranslate">&lt;img src="images/firefox-icon.png" alt="Mi imagen de prueba"&gt;</pre>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="page-section clearfix">
+        <div class="container">
+            <div class="intro">
+                <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="assets/img/title.jpg" alt="..." />
+                <div class="intro-text left-0 text-justify bg-faded p-5 rounded">
+                    <h2 class="section-heading mb-4">
+                        <span class="section-heading-upper">¿Y los títulos?</span>
+                        <span class="section-heading-lower">ENCABEZADOS</span>
+                    </h2>
+                    <p class="mb-3">
+                        Los encabezados de manera análoga a lo que sucede en word, nos permiten dar jerarquía a
+                        diferentes títulos para dar categorías a los diferentes tipos de textos que tenemos en una
+                        página web. HTML posee hasta seis niveles de encabezados.
+                    </p>
+
+                    <pre class="notranslate">&lt;h1&gt;Mi título principal&lt;/h1&gt;</pre>
+                    <pre class="notranslate">&lt;h2&gt;Mi título de nivel superior&lt;/h2&gt;</pre>
+                    <pre class="notranslate">&lt;h3&gt;Mi subtítulo&lt;/h3&gt;</pre>
+                    <pre class="notranslate">&lt;h4&gt;Mi sub-subtítulo&lt;/h4&gt;</pre>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="page-section clearfix">
+        <div class="container">
+            <div class="intro">
+                <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="assets/img/list.jpg" alt="..." />
+                <div class="intro-text left-0 text-justify bg-faded p-5 rounded">
+                    <h2 class="section-heading mb-4">
+                        <span class="section-heading-upper">¿Y las listas?</span>
+                        <span class="section-heading-lower">LISTAS</span>
+                    </h2>
+                    <p class="mb-3">
+                        Las listas son muy importantes ya que junto con los párrafos y los encabezados, son uno de los
+                        elementos más usados en las páginas web. Son definidas mediante las etiquetas "ol" cuando están
+                        ordenadas y "ul" cuando están desordenadas se encierran con la etiqueta "li" en cada punto de la lista.
+                    </p>
+                    <pre class="notranslate">&lt;p&gt;En Mozilla, somos una comunidad de&lt;/p&gt;
+
+                        &lt;ul&gt;
+                          &lt;li&gt;tecnólogos&lt;/li&gt;
+                          &lt;li&gt;pensadores&lt;/li&gt;
+                          &lt;li&gt;constructores&lt;/li&gt;
+                        &lt;/ul&gt;
+                        
+                        &lt;p&gt;trabajando juntos... &lt;/p&gt;</pre>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer text-faded text-center py-5">
+        <div class="container">
+            <p class="m-0 small">Copyright &copy; Camilo Mora 2022</p>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

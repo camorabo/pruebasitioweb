@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Taller 4 - DIU</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link
+        href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <h1 class="site-heading text-center text-faded d-none d-lg-block">
+            <span class="site-heading-upper text-primary mb-3">APRENDIENDO A PROGRAMAR</span>
+            <span class="site-heading-lower">HTML</span>
+        </h1>
+    </header>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.html">Comienza a programar en HTML</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index.html">Definición</a>
+                    </li>
+                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="car.html">Características</a>
+                    </li>
+                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="exam.html">Ejemplos</a></li>
+                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="ref.html">Referencias</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="page-section clearfix">
+        <div class="container">
+            <div class="intro">
+                <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="assets/img/intro.jpg" alt="..." />
+                <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+                    <h2 class="section-heading mb-4">
+                        <span class="section-heading-upper">Definición</span>
+                        <span class="section-heading-lower">¿QUÉ ES HTML?</span>
+                    </h2>
+                    <p class="mb-3">HTML no es un lenguaje de programación, es un lenguaje de etiquetas que permite
+                        estructurar el contenido. Las etiquetas de encierre pueden introducir una imagen, cambiar los
+                        estilos de la letra o incluso transportarte a otro sitio.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="page-section cta">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 mx-auto">
+                    <div class="cta-inner bg-faded text-justify rounded">
+                        <h2 class="section-heading mb-4">
+                            <span class="section-heading-upper">¿No recuerdas como escribir en HTML? Recuerda...</span>
+                            <span class="section-heading-lower">Anatomía de un elemento HTML</span>
+                        </h2>
+                        <p><img alt="elementos de gato gruñon"
+                                src="https://mdn.mozillademos.org/files/11913/htmlexp.png"
+                                style="display: block; margin: 0px auto;" loading="lazy"></p>
+                        <ol>
+                            <li><strong>La etiqueta de apertura</strong>: consiste en el nombre del elemento (en este
+                                caso, p), encerrado por <strong>paréntesis angulares</strong> (&lt; &gt;) de apertura y
+                                cierre. Establece dónde comienza o empieza a tener efecto el elemento —en este caso,
+                                dónde es el comienzo del párrafo—.</li>
+                            <li><strong>La etiqueta de cierre</strong>: es igual que la etiqueta de apertura, excepto
+                                que incluye una barra de cierre (/) antes del nombre de la etiqueta. Establece dónde
+                                termina el elemento —en este caso dónde termina el párrafo—.</li>
+                            <li><strong>El contenido</strong>: este es el contenido del elemento, que en este caso es
+                                sólo texto.</li>
+                            <li><strong>El elemento</strong>: la etiqueta de apertura, más la etiqueta de cierre, más el
+                                contenido equivale al elemento.</li>
+                        </ol>
+                        <p>Las etiquetas pueden tener atributos y estos deben tener siempre:</p>
+                        <ol>
+                            <li>Un espacio entre el atributo y el nombre del elemento o de atributos previos.</li>
+                            <li>Nombre del atributo junto con el signo de igual (=).</li>
+                            <li>Comillas de apertura y de cierre para encerrar el valor del atributo.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="page-section cta">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 mx-auto">
+                    <div class="cta-inner bg-faded text-justify rounded">
+                        <h2 class="section-heading mb-4">
+                            <span class="section-heading-upper">Otra propiedad de HTML es...
+                            </span>
+                            <span class="section-heading-lower">Anidar elementos</span>
+                        </h2>
+                        <p class="mb-0">Se pueden incluir elementos dentro de otros elementos, para hacer énfasis y que
+                            la palabra quede en negrilla se utiliza la etiqueta <strong>p</strong> con sus llaves
+                            respectivas y dentro se
+                            incluye la etiqueta <strong>strong</strong> encerrando la palabra que se quiere que esté en
+                            negrilla. </p>
+                        <br>
+                        <p class="mb-0">El orden es importante por lo que es indispensable tener presente que etiquetas
+                            tienen que irse cerrando de tal forma que se sepa con claridad que elementos quedan por
+                            fuera y cuáles no. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="page-section clearfix">
+        <div class="container">
+            <div class="intro">
+                <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="assets/img/images.jpg" alt="..." />
+                <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+                    <h2 class="section-heading mb-4">
+                        <span class="section-heading-upper">Que no se nos olvide que algunos son...
+                        </span>
+                        <span class="section-heading-lower">Elementos vacíos</span>
+                    </h2>
+                    <p class="mb-3">Algunos elementos no poseen contenido, como por ejemplo la etiqueta img, que no
+                        tiene etiqueta de cierre y tiene dos atributos: <strong>src</strong> que nos determina de
+                        dónde proviene el
+                        recurso y <strong>alt</strong>, el texto que nos dice de qué trata la imagen cuando se
+                        utiliza un lector de pantalla.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer text-faded text-center py-5">
+        <div class="container">
+            <p class="m-0 small">Copyright &copy; Camilo Mora 2022</p>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

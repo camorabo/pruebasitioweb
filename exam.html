@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Taller 4 - DIU</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png" />
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link
+        href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+        <h1 class="site-heading text-center text-faded d-none d-lg-block">
+            <span class="site-heading-upper text-primary mb-3">APRENDIENDO A PROGRAMAR</span>
+            <span class="site-heading-lower">HTML</span>
+        </h1>
+    </header>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand text-uppercase fw-bold d-lg-none" href="index.html">Comienza a programar en HTML</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="index.html">Definición</a>
+                    </li>
+                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="car.html">Características</a>
+                    </li>
+                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="exam.html">Ejemplos</a></li>
+                    <li class="nav-item px-lg-4"><a class="nav-link text-uppercase" href="ref.html">Referencias</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="page-section">
+        <div class="container">
+            <div class="product-item">
+                <div class="product-item-title d-flex">
+                    <div class="bg-faded p-5 d-flex ms-auto rounded">
+                        <h2 class="section-heading mb-0">
+                            <span class="section-heading-upper">Como un primer ejemplo tenemos </span>
+                            <span class="section-heading-lower">Hoja de Vida de Clarence Taylor</span>
+                        </h2>
+                    </div>
+                </div>
+                <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0"
+                    src="assets/img/CV-website.jpg" alt="..." />
+                <div class="product-item-description d-flex me-auto">
+                    <div class="bg-faded p-5 rounded">
+                        <p class="mb-0">En la primera parte del código tenemos la etiqueta DOCTYPE, que es con la que
+                            comenzamos nuestro documento HTML, también podemos ver parámetros establecidos en la
+                            etiqueta head y el uso de la etiqueta meta para la definición del estándar de caracteres.
+                        </p>
+                        <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+    &lt;head&gt;
+        &lt;meta charset="utf-8" /&gt;
+        &lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /&gt;
+        &lt;meta name="description" content="" /&gt;
+        &lt;meta name="author" content="" /&gt;
+        &lt;title&gt;Resume - Start Bootstrap Theme&lt;/title&gt;
+        &lt;link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" /&gt;
+        &lt;!-- Font Awesome icons (free version)--&gt;
+        &lt;script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"&gt;&lt;/script&gt;
+        &lt;!-- Google fonts--&gt;
+        &lt;link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" /&gt;
+        &lt;link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" /&gt;
+        &lt;!-- Core theme CSS (includes Bootstrap)--&gt;
+        &lt;link href="css/styles.css" rel="stylesheet" /&gt;
+    &lt;/head&gt;
+</code></pre>
+                        <p class="mb-0">En la etiqueta navegación dentro de la etiqueta de body se relacionan las
+                            diferentes páginas. Así mismo el uso de etiquetas para los encabezados y las diferentes
+                            listas presentes en este documento.
+                        </p>
+                        <pre><code>
+    &lt;body id="page-top"&gt;
+        &lt;!-- Navigation--&gt;
+        &lt;nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav"&gt;
+            &lt;a class="navbar-brand js-scroll-trigger" href="#page-top"&gt;
+                &lt;span class="d-block d-lg-none"&gt;Clarence Taylor&lt;/span&gt;
+                &lt;span class="d-none d-lg-block"&gt;&lt;img class="img-fluid img-profile
+                 rounded-circle mx-auto mb-2" src="assets/img/profile.jpg" alt="..." /&gt;&lt;/span&gt;
+            &lt;/a&gt;
+            &lt;button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" 
+            aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"&gt;&lt;
+            span class="navbar-toggler-icon"&gt;&lt;/span&gt;&lt;/button&gt;
+            &lt;div class="collapse navbar-collapse" id="navbarResponsive"&gt;
+                &lt;ul class="navbar-nav"&gt;
+                    &lt;li class="nav-item"&gt;&lt;a class="nav-link js-scroll-trigger" href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+                    &lt;li class="nav-item"&gt;&lt;a class="nav-link js-scroll-trigger" href="#experience"&gt;Experience&lt;/a&gt;&lt;/li&gt;
+                    &lt;li class="nav-item"&gt;&lt;a class="nav-link js-scroll-trigger" href="#education"&gt;Education&lt;/a&gt;&lt;/li&gt;
+                    &lt;li class="nav-item"&gt;&lt;a class="nav-link js-scroll-trigger" href="#skills"&gt;Skills&lt;/a&gt;&lt;/li&gt;
+                    &lt;li class="nav-item"&gt;&lt;a class="nav-link js-scroll-trigger" href="#interests"&gt;Interests&lt;/a&gt;&lt;/li&gt;
+                    &lt;li class="nav-item"&gt;&lt;a class="nav-link js-scroll-trigger" href="#awards"&gt;Awards&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/nav&gt;
+        &lt;!-- Page Content--&gt;
+        &lt;div class="container-fluid p-0"&gt;
+            &lt;!-- About--&gt;
+            &lt;section class="resume-section" id="about"&gt;
+                &lt;div class="resume-section-content"&gt;
+                    &lt;h1 class="mb-0"&gt;
+                        Clarence
+                        &lt;span class="text-primary"&gt;Taylor&lt;/span&gt;
+                    &lt;/h1&gt;
+                    &lt;div class="subheading mb-5"&gt;
+                        3542 Berry Street · Cheyenne Wells, CO 80810 · (317) 585-8468 ·
+                        &lt;a href="mailto:name@email.com"&gt;name@email.com&lt;/a&gt;
+                    &lt;/div&gt;
+                    &lt;p class="lead mb-5"&gt;I am experienced in leveraging agile frameworks to provide a robust synopsis for high level overviews.
+                     Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition.&lt;/p&gt;
+                    &lt;div class="social-icons"&gt;
+                        &lt;a class="social-icon" href="#!"&gt;&lt;i class="fab fa-linkedin-in"&gt;&lt;/i&gt;&lt;/a&gt;
+                        &lt;a class="social-icon" href="#!"&gt;&lt;i class="fab fa-github"&gt;&lt;/i&gt;&lt;/a&gt;
+                        &lt;a class="social-icon" href="#!"&gt;&lt;i class="fab fa-twitter"&gt;&lt;/i&gt;&lt;/a&gt;
+                        &lt;a class="social-icon" href="#!"&gt;&lt;i class="fab fa-facebook-f"&gt;&lt;/i&gt;&lt;/a&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/section&gt;
+            &lt;hr class="m-0" /&gt;
+            &lt;!-- Experience--&gt;
+            &lt;section class="resume-section" id="experience"&gt;
+                &lt;div class="resume-section-content"&gt;
+                    &lt;h2 class="mb-5"&gt;Experience&lt;/h2&gt;
+                    &lt;div class="d-flex flex-column flex-md-row justify-content-between mb-5"&gt;
+                        &lt;div class="flex-grow-1"&gt;
+                            &lt;h3 class="mb-0"&gt;Senior Web Developer&lt;/h3&gt;
+                            &lt;div class="subheading mb-3"&gt;Intelitec Solutions&lt;/div&gt;
+                            &lt;p&gt;Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, 
+                            going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. 
+                            User generated content in real-time will have multiple touchpoints for offshoring.&lt;/p&gt;
+                        &lt;/div&gt;
+                        &lt;div class="flex-shrink-0"&gt;&lt;span class="text-primary"&gt;March 2013 - Present&lt;/span&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="d-flex flex-column flex-md-row justify-content-between mb-5"&gt;
+                        &lt;div class="flex-grow-1"&gt;
+                            &lt;h3 class="mb-0"&gt;Web Developer&lt;/h3&gt;
+                            &lt;div class="subheading mb-3"&gt;Intelitec Solutions&lt;/div&gt;
+                            &lt;p&gt;Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. 
+                            Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information 
+                            highway will close the loop on focusing solely on the bottom line.&lt;/p&gt;
+                        &lt;/div&gt;
+                        &lt;div class="flex-shrink-0"&gt;&lt;span class="text-primary"&gt;December 2011 - March 2013&lt;/span&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="d-flex flex-column flex-md-row justify-content-between mb-5"&gt;
+                        &lt;div class="flex-grow-1"&gt;
+                            &lt;h3 class="mb-0"&gt;Junior Web Designer&lt;/h3&gt;
+                            &lt;div class="subheading mb-3"&gt;Shout! Media Productions&lt;/div&gt;
+                            &lt;p&gt;Podcasting operational change management inside of workflows to establish a framework. Taking seamless key 
+                            performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on
+                             the start-up mentality to derive convergence on cross-platform integration.&lt;/p&gt;
+                        &lt;/div&gt;
+                        &lt;div class="flex-shrink-0"&gt;&lt;span class="text-primary"&gt;July 2010 - December 2011&lt;/span&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="d-flex flex-column flex-md-row justify-content-between"&gt;
+                        &lt;div class="flex-grow-1"&gt;
+                            &lt;h3 class="mb-0"&gt;Web Design Intern&lt;/h3&gt;
+                            &lt;div class="subheading mb-3"&gt;Shout! Media Productions&lt;/div&gt;
+                            &lt;p&gt;Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C 
+                            users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.&lt;/p&gt;
+                        &lt;/div&gt;
+                        &lt;div class="flex-shrink-0"&gt;&lt;span class="text-primary"&gt;September 2008 - June 2010&lt;/span&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/section&gt;
+            &lt;hr class="m-0" /&gt;
+            &lt;!-- Education--&gt;
+            &lt;section class="resume-section" id="education"&gt;
+                &lt;div class="resume-section-content"&gt;
+                    &lt;h2 class="mb-5"&gt;Education&lt;/h2&gt;
+                    &lt;div class="d-flex flex-column flex-md-row justify-content-between mb-5"&gt;
+                        &lt;div class="flex-grow-1"&gt;
+                            &lt;h3 class="mb-0"&gt;University of Colorado Boulder&lt;/h3&gt;
+                            &lt;div class="subheading mb-3"&gt;Bachelor of Science&lt;/div&gt;
+                            &lt;div&gt;Computer Science - Web Development Track&lt;/div&gt;
+                            &lt;p&gt;GPA: 3.23&lt;/p&gt;
+                        &lt;/div&gt;
+                            &lt;div class="flex-shrink-0"&gt;&lt;span class="text-primary"&gt;August 2006 - May 2010&lt;/span&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                    &lt;div class="d-flex flex-column flex-md-row justify-content-between"&gt;
+                        &lt;div class="flex-grow-1"&gt;
+                            &lt;h3 class="mb-0"&gt;James Buchanan High School&lt;/h3&gt;
+                            &lt;div class="subheading mb-3"&gt;Technology Magnet Program&lt;/div&gt;
+                            &lt;p&gt;GPA: 3.56&lt;/p&gt;
+                        &lt;/div&gt;
+                        &lt;div class="flex-shrink-0"&gt;&lt;span class="text-primary"&gt;August 2002 - May 2006&lt;/span&gt;&lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/section&gt;
+            &lt;hr class="m-0" /&gt;
+            &lt;!-- Skills--&gt;
+            &lt;section class="resume-section" id="skills"&gt;
+                &lt;div class="resume-section-content"&gt;
+                    &lt;h2 class="mb-5"&gt;Skills&lt;/h2&gt;
+                    &lt;div class="subheading mb-3"&gt;Programming Languages & Tools&lt;/div&gt;
+                    &lt;ul class="list-inline dev-icons"&gt;
+                        &lt;li class="list-inline-item"&gt;&lt;i class="fab fa-html5"&gt;&lt;/i&gt;&lt;/li&gt;
+                        &lt;li class="list-inline-item"&gt;&lt;i class="fab fa-css3-alt"&gt;&lt;/i&gt;&lt;/li&gt;
+                        &lt;li class="list-inline-item"&gt;&lt;i class="fab fa-js-square"&gt;&lt;/i&gt;&lt;/li&gt;
+                        &lt;li class="list-inline-item"&gt;&lt;i class="fab fa-angular"&gt;&lt;/i&gt;&lt;/li&gt;
+                        &lt;li class="list-inline-item"&gt;&lt;i class="fab fa-react"&gt;&lt;/i&gt;&lt;/li&gt;
+                        &lt;li class="list-inline-item"&gt;&lt;i class="fab fa-node-js"&gt;&lt;/i&gt;&lt;/li&gt;
+                        &lt;li class="list-inline-item"&gt;&lt;i class="fab fa-sass"&gt;&lt;/i&gt;&lt;/li&gt;
+                        &lt;li class="list-inline-item"&gt;&lt;i class="fab fa-less"&gt;&lt;/i&gt;&lt;/li&gt;
+                        &lt;li class="list-inline-item"&gt;&lt;i class="fab fa-wordpress"&gt;&lt;/i&gt;&lt;/li&gt;
+                        &lt;li class="list-inline-item"&gt;&lt;i class="fab fa-gulp"&gt;&lt;/i&gt;&lt;/li&gt;
+                        &lt;li class="list-inline-item"&gt;&lt;i class="fab fa-grunt"&gt;&lt;/i&gt;&lt;/li&gt;
+                        &lt;li class="list-inline-item"&gt;&lt;i class="fab fa-npm"&gt;&lt;/i&gt;&lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;div class="subheading mb-3"&gt;Workflow&lt;/div&gt;
+                    &lt;ul class="fa-ul mb-0"&gt;
+                        &lt;li&gt;
+                            &lt;span class="fa-li"&gt;&lt;i class="fas fa-check"&gt;&lt;/i&gt;&lt;/span&gt;
+                            Mobile-First, Responsive Design
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;span class="fa-li"&gt;&lt;i class="fas fa-check"&gt;&lt;/i&gt;&lt;/span&gt;
+                            Cross Browser Testing & Debugging
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;span class="fa-li"&gt;&lt;i class="fas fa-check"&gt;&lt;/i&gt;&lt;/span&gt;
+                            Cross Functional Teams
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;span class="fa-li"&gt;&lt;i class="fas fa-check"&gt;&lt;/i&gt;&lt;/span&gt;
+                            Agile Development & Scrum
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/section&gt;
+            &lt;hr class="m-0" /&gt;
+            &lt;!-- Interests--&gt;
+            &lt;section class="resume-section" id="interests"&gt;
+                &lt;div class="resume-section-content"&gt;
+                    &lt;h2 class="mb-5"&gt;Interests&lt;/h2&gt;
+                    &lt;p&gt;Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid skier 
+                    and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free climbing, and kayaking.&lt;/p&gt;
+                    &lt;p class="mb-0"&gt;When forced indoors, I follow a number of sci-fi and fantasy genre movies and television shows, 
+                    I am an aspiring chef, and I spend a large amount of my free time exploring 
+                    the latest technology advancements in the front-end web development world.&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/section&gt;
+            &lt;hr class="m-0" /&gt;
+            &lt;!-- Awards--&gt;
+            &lt;section class="resume-section" id="awards"&gt;
+                &lt;div class="resume-section-content"&gt;
+                    &lt;h2 class="mb-5"&gt;Awards & Certifications&lt;/h2&gt;
+                    &lt;ul class="fa-ul mb-0"&gt;
+                        &lt;li&gt;
+                            &lt;span class="fa-li"&gt;&lt;i class="fas fa-trophy text-warning"&gt;&lt;/i&gt;&lt;/span&gt;
+                            Google Analytics Certified Developer
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;span class="fa-li"&gt;&lt;i class="fas fa-trophy text-warning"&gt;&lt;/i&gt;&lt;/span&gt;
+                            Mobile Web Specialist - Google Certification
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;span class="fa-li"&gt;&lt;i class="fas fa-trophy text-warning"&gt;&lt;/i&gt;&lt;/span&gt;
+                            1
+                            &lt;sup&gt;st&lt;/sup&gt;
+                            Place - University of Colorado Boulder - Emerging Tech Competition 2009
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;span class="fa-li"&gt;&lt;i class="fas fa-trophy text-warning"&gt;&lt;/i&gt;&lt;/span&gt;
+                            1
+                            &lt;sup&gt;st&lt;/sup&gt;
+                            Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;span class="fa-li"&gt;&lt;i class="fas fa-trophy text-warning"&gt;&lt;/i&gt;&lt;/span&gt;
+                            2
+                            &lt;sup&gt;nd&lt;/sup&gt;
+                            Place - University of Colorado Boulder - Emerging Tech Competition 2008
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;span class="fa-li"&gt;&lt;i class="fas fa-trophy text-warning"&gt;&lt;/i&gt;&lt;/span&gt;
+                            1
+                            &lt;sup&gt;st&lt;/sup&gt;
+                            Place - James Buchanan High School - Hackathon 2006
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;span class="fa-li"&gt;&lt;i class="fas fa-trophy text-warning"&gt;&lt;/i&gt;&lt;/span&gt;
+                            3
+                            &lt;sup&gt;rd&lt;/sup&gt;
+                            Place - James Buchanan High School - Hackathon 2005
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/section&gt;
+        &lt;/div&gt;
+        &lt;!-- Bootstrap core JS--&gt;
+        &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+        &lt;!-- Core theme JS--&gt;
+        &lt;script src="js/scripts.js"&gt;&lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="page-section">
+        <div class="container">
+            <div class="product-item">
+                <div class="product-item-title d-flex">
+                    <div class="bg-faded p-5 d-flex me-auto rounded">
+                        <h2 class="section-heading mb-0">
+                            <span class="section-heading-upper">Como segundo ejemplo tenemos</span>
+                            <span class="section-heading-lower">Prototipo de Blog</span>
+                        </h2>
+                    </div>
+                </div>
+                <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0"
+                    src="assets/img/blog-website.jpg" alt="..." />
+                <div class="product-item-description d-flex ms-auto">
+                    <div class="bg-faded p-5 rounded">
+                        <p class="mb-0">Our seasonal menu features delicious snacks, baked goods, and even full meals
+                            perfect for breakfast or lunchtime. We source our ingredients from local, oragnic farms
+                            whenever possible, alongside premium vendors for specialty goods.</p>
+                        <pre>
+                            <code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="utf-8" /&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /&gt;
+    &lt;meta name="description" content="" /&gt;
+    &lt;meta name="author" content="" /&gt;
+    &lt;title&gt;Clean Blog - Start Bootstrap Theme&lt;/title&gt;
+    &lt;link rel="icon" type="image/x-icon" href="assets/favicon.ico" /&gt;
+    &lt;!-- Font Awesome icons (free version)--&gt;
+    &lt;script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"&gt;&lt;/script&gt;
+    &lt;!-- Google fonts--&gt;
+    &lt;link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css" /&gt;
+    &lt;link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+        rel="stylesheet" type="text/css" /&gt;
+    &lt;!-- Core theme CSS (includes Bootstrap)--&gt;
+    &lt;link href="css/styles.css" rel="stylesheet" /&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;!-- Navigation--&gt;
+    &lt;nav class="navbar navbar-expand-lg navbar-light" id="mainNav"&gt;
+        &lt;div class="container px-4 px-lg-5"&gt;
+            &lt;a class="navbar-brand" href="index.html"&gt;Start Bootstrap&lt;/a&gt;
+            &lt;button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"&gt;
+                Menu
+                &lt;i class="fas fa-bars"&gt;&lt;/i&gt;
+            &lt;/button&gt;
+            &lt;div class="collapse navbar-collapse" id="navbarResponsive"&gt;
+                &lt;ul class="navbar-nav ms-auto py-4 py-lg-0"&gt;
+                    &lt;li class="nav-item"&gt;&lt;a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                    &lt;li class="nav-item"&gt;&lt;a class="nav-link px-lg-3 py-3 py-lg-4" href="about.html"&gt;About&lt;/a&gt;&lt;/li&gt;
+                    &lt;li class="nav-item"&gt;&lt;a class="nav-link px-lg-3 py-3 py-lg-4" href="post.html"&gt;Sample Post&lt;/a&gt;&lt;/li&gt;
+                    &lt;li class="nav-item"&gt;&lt;a class="nav-link px-lg-3 py-3 py-lg-4" href="contact.html"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/nav&gt;
+    &lt;!-- Page Header--&gt;
+    &lt;header class="masthead" style="background-image: url('assets/img/home-bg.jpg')"&gt;
+        &lt;div class="container position-relative px-4 px-lg-5"&gt;
+            &lt;div class="row gx-4 gx-lg-5 justify-content-center"&gt;
+                &lt;div class="col-md-10 col-lg-8 col-xl-7"&gt;
+                    &lt;div class="site-heading"&gt;
+                        &lt;h1&gt;Clean Blog&lt;/h1&gt;
+                        &lt;span class="subheading"&gt;A Blog Theme by Start Bootstrap&lt;/span&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/header&gt;
+    &lt;!-- Main Content--&gt;
+    &lt;div class="container px-4 px-lg-5"&gt;
+        &lt;div class="row gx-4 gx-lg-5 justify-content-center"&gt;
+            &lt;div class="col-md-10 col-lg-8 col-xl-7"&gt;
+                &lt;!-- Post preview--&gt;
+                &lt;div class="post-preview"&gt;
+                    &lt;a href="post.html"&gt;
+                        &lt;h2 class="post-title"&gt;Man must explore, and this is exploration at its greatest&lt;/h2&gt;
+                        &lt;h3 class="post-subtitle"&gt;Problems look mighty small from 150 miles up&lt;/h3&gt;
+                    &lt;/a&gt;
+                    &lt;p class="post-meta"&gt;
+                        Posted by
+                        &lt;a href="#!"&gt;Start Bootstrap&lt;/a&gt;
+                        on September 24, 2022
+                    &lt;/p&gt;
+                &lt;/div&gt;
+                &lt;!-- Divider--&gt;
+                &lt;hr class="my-4" /&gt;
+                &lt;!-- Post preview--&gt;
+                &lt;div class="post-preview"&gt;
+                    &lt;a href="post.html"&gt;
+                        &lt;h2 class="post-title"&gt;I believe every human has a finite number of heartbeats. I don't intend
+                            to waste any of mine.&lt;/h2&gt;
+                    &lt;/a&gt;
+                    &lt;p class="post-meta"&gt;
+                        Posted by
+                        &lt;a href="#!"&gt;Start Bootstrap&lt;/a&gt;
+                        on September 18, 2022
+                    &lt;/p&gt;
+                &lt;/div&gt;
+                &lt;!-- Divider--&gt;
+                &lt;hr class="my-4" /&gt;
+                &lt;!-- Post preview--&gt;
+                &lt;div class="post-preview"&gt;
+                    &lt;a href="post.html"&gt;
+                        &lt;h2 class="post-title"&gt;Science has not yet mastered prophecy&lt;/h2&gt;
+                        &lt;h3 class="post-subtitle"&gt;We predict too much for the next year and yet far too little for the
+                            next ten.&lt;/h3&gt;
+                    &lt;/a&gt;
+                    &lt;p class="post-meta"&gt;
+                        Posted by
+                        &lt;a href="#!"&gt;Start Bootstrap&lt;/a&gt;
+                        on August 24, 2022
+                    &lt;/p&gt;
+                &lt;/div&gt;
+                &lt;!-- Divider--&gt;
+                &lt;hr class="my-4" /&gt;
+                &lt;!-- Post preview--&gt;
+                &lt;div class="post-preview"&gt;
+                    &lt;a href="post.html"&gt;
+                        &lt;h2 class="post-title"&gt;Failure is not an option&lt;/h2&gt;
+                        &lt;h3 class="post-subtitle"&gt;Many say exploration is part of our destiny, but it’s actually our
+                            duty to future generations.&lt;/h3&gt;
+                    &lt;/a&gt;
+                    &lt;p class="post-meta"&gt;
+                        Posted by
+                        &lt;a href="#!"&gt;Start Bootstrap&lt;/a&gt;
+                        on July 8, 2022
+                    &lt;/p&gt;
+                &lt;/div&gt;
+                &lt;!-- Divider--&gt;
+                &lt;hr class="my-4" /&gt;
+                &lt;!-- Pager--&gt;
+                &lt;div class="d-flex justify-content-end mb-4"&gt;&lt;a class="btn btn-primary text-uppercase" href="#!"&gt;Older
+                        Posts →&lt;/a&gt;&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;!-- Footer--&gt;
+    &lt;footer class="border-top"&gt;
+        &lt;div class="container px-4 px-lg-5"&gt;
+            &lt;div class="row gx-4 gx-lg-5 justify-content-center"&gt;
+                &lt;div class="col-md-10 col-lg-8 col-xl-7"&gt;
+                    &lt;ul class="list-inline text-center"&gt;
+                        &lt;li class="list-inline-item"&gt;
+                            &lt;a href="#!"&gt;
+                                &lt;span class="fa-stack fa-lg"&gt;
+                                    &lt;i class="fas fa-circle fa-stack-2x"&gt;&lt;/i&gt;
+                                    &lt;i class="fab fa-twitter fa-stack-1x fa-inverse"&gt;&lt;/i&gt;
+                                &lt;/span&gt;
+                            &lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class="list-inline-item"&gt;
+                            &lt;a href="#!"&gt;
+                                &lt;span class="fa-stack fa-lg"&gt;
+                                    &lt;i class="fas fa-circle fa-stack-2x"&gt;&lt;/i&gt;
+                                    &lt;i class="fab fa-facebook-f fa-stack-1x fa-inverse"&gt;&lt;/i&gt;
+                                &lt;/span&gt;
+                            &lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class="list-inline-item"&gt;
+                            &lt;a href="#!"&gt;
+                                &lt;span class="fa-stack fa-lg"&gt;
+                                    &lt;i class="fas fa-circle fa-stack-2x"&gt;&lt;/i&gt;
+                                    &lt;i class="fab fa-github fa-stack-1x fa-inverse"&gt;&lt;/i&gt;
+                                &lt;/span&gt;
+                            &lt;/a&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;div class="small text-center text-muted fst-italic"&gt;Copyright &copy; Your Website 2022&lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/footer&gt;
+    &lt;!-- Bootstrap core JS--&gt;
+    &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+    &lt;!-- Core theme JS--&gt;
+    &lt;script src="js/scripts.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="page-section">
+        <div class="container">
+            <div class="product-item">
+                <div class="product-item-title d-flex">
+                    <div class="bg-faded p-5 d-flex ms-auto rounded">
+                        <h2 class="section-heading mb-0">
+                            <span class="section-heading-upper">Finalmente tenemos un portafolio con estilo</span>
+                            <span class="section-heading-lower">Stylish Portafolio</span>
+                        </h2>
+                    </div>
+                </div>
+                <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0"
+                    src="assets/img/Stylish-website.jpg" alt="..." />
+                <div class="product-item-description d-flex me-auto">
+                    <div class="bg-faded p-5 rounded">
+                        <p class="mb-0">En este ejemplo se tiene una página principal similar a una infografía, la cual
+                            se recorre hasta el final de la página.Como dato curioso es que se incluye google maps en
+                            esta página.</p>
+                        <pre><code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="utf-8" /&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" /&gt;
+    &lt;meta name="description" content="" /&gt;
+    &lt;meta name="author" content="" /&gt;
+    &lt;title&gt;Stylish Portfolio - Start Bootstrap Template&lt;/title&gt;
+    &lt;!-- Favicon--&gt;
+    &lt;link rel="icon" type="image/x-icon" href="assets/favicon.ico" /&gt;
+    &lt;!-- Font Awesome icons (free version)--&gt;
+    &lt;script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"&gt;&lt;/script&gt;
+    &lt;!-- Simple line icons--&gt;
+    &lt;link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css"
+        rel="stylesheet" /&gt;
+    &lt;!-- Google fonts--&gt;
+    &lt;link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic"
+        rel="stylesheet" type="text/css" /&gt;
+    &lt;!-- Core theme CSS (includes Bootstrap)--&gt;
+    &lt;link href="css/styles.css" rel="stylesheet" /&gt;
+&lt;/head&gt;
+
+&lt;body id="page-top"&gt;
+    &lt;!-- Navigation--&gt;
+    &lt;a class="menu-toggle rounded" href="#"&gt;&lt;i class="fas fa-bars"&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;nav id="sidebar-wrapper"&gt;
+        &lt;ul class="sidebar-nav"&gt;
+            &lt;li class="sidebar-brand"&gt;&lt;a href="#page-top"&gt;Start Bootstrap&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="sidebar-nav-item"&gt;&lt;a href="#page-top"&gt;Home&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="sidebar-nav-item"&gt;&lt;a href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="sidebar-nav-item"&gt;&lt;a href="#services"&gt;Services&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="sidebar-nav-item"&gt;&lt;a href="#portfolio"&gt;Portfolio&lt;/a&gt;&lt;/li&gt;
+            &lt;li class="sidebar-nav-item"&gt;&lt;a href="#contact"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/nav&gt;
+    &lt;!-- Header--&gt;
+    &lt;header class="masthead d-flex align-items-center"&gt;
+        &lt;div class="container px-4 px-lg-5 text-center"&gt;
+            &lt;h1 class="mb-1"&gt;Stylish Portfolio&lt;/h1&gt;
+            &lt;h3 class="mb-5"&gt;&lt;em&gt;A Free Bootstrap Theme by Start Bootstrap&lt;/em&gt;&lt;/h3&gt;
+            &lt;a class="btn btn-primary btn-xl" href="#about"&gt;Find Out More&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/header&gt;
+    &lt;!-- About--&gt;
+    &lt;section class="content-section bg-light" id="about"&gt;
+        &lt;div class="container px-4 px-lg-5 text-center"&gt;
+            &lt;div class="row gx-4 gx-lg-5 justify-content-center"&gt;
+                &lt;div class="col-lg-10"&gt;
+                    &lt;h2&gt;Stylish Portfolio is the perfect theme for your next project!&lt;/h2&gt;
+                    &lt;p class="lead mb-5"&gt;
+                        This theme features a flexible, UX friendly sidebar menu and stock photos from our friends at
+                        &lt;a href="https://unsplash.com/"&gt;Unsplash&lt;/a&gt;
+                        !
+                    &lt;/p&gt;
+                    &lt;a class="btn btn-dark btn-xl" href="#services"&gt;What We Offer&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+    &lt;!-- Services--&gt;
+    &lt;section class="content-section bg-primary text-white text-center" id="services"&gt;
+        &lt;div class="container px-4 px-lg-5"&gt;
+            &lt;div class="content-section-heading"&gt;
+                &lt;h3 class="text-secondary mb-0"&gt;Services&lt;/h3&gt;
+                &lt;h2 class="mb-5"&gt;What We Offer&lt;/h2&gt;
+            &lt;/div&gt;
+            &lt;div class="row gx-4 gx-lg-5"&gt;
+                &lt;div class="col-lg-3 col-md-6 mb-5 mb-lg-0"&gt;
+                    &lt;span class="service-icon rounded-circle mx-auto mb-3"&gt;&lt;i class="icon-screen-smartphone"&gt;&lt;/i&gt;&lt;/span&gt;
+                    &lt;h4&gt;&lt;strong&gt;Responsive&lt;/strong&gt;&lt;/h4&gt;
+                    &lt;p class="text-faded mb-0"&gt;Looks great on any screen size!&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class="col-lg-3 col-md-6 mb-5 mb-lg-0"&gt;
+                    &lt;span class="service-icon rounded-circle mx-auto mb-3"&gt;&lt;i class="icon-pencil"&gt;&lt;/i&gt;&lt;/span&gt;
+                    &lt;h4&gt;&lt;strong&gt;Redesigned&lt;/strong&gt;&lt;/h4&gt;
+                    &lt;p class="text-faded mb-0"&gt;Freshly redesigned for Bootstrap 5.&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class="col-lg-3 col-md-6 mb-5 mb-md-0"&gt;
+                    &lt;span class="service-icon rounded-circle mx-auto mb-3"&gt;&lt;i class="icon-like"&gt;&lt;/i&gt;&lt;/span&gt;
+                    &lt;h4&gt;&lt;strong&gt;Favorited&lt;/strong&gt;&lt;/h4&gt;
+                    &lt;p class="text-faded mb-0"&gt;
+                        Millions of users
+                        &lt;i class="fas fa-heart"&gt;&lt;/i&gt;
+                        Start Bootstrap!
+                    &lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class="col-lg-3 col-md-6"&gt;
+                    &lt;span class="service-icon rounded-circle mx-auto mb-3"&gt;&lt;i class="icon-mustache"&gt;&lt;/i&gt;&lt;/span&gt;
+                    &lt;h4&gt;&lt;strong&gt;Question&lt;/strong&gt;&lt;/h4&gt;
+                    &lt;p class="text-faded mb-0"&gt;I mustache you a question...&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+    &lt;!-- Callout--&gt;
+    &lt;section class="callout"&gt;
+        &lt;div class="container px-4 px-lg-5 text-center"&gt;
+            &lt;h2 class="mx-auto mb-5"&gt;
+                Welcome to
+                &lt;em&gt;your&lt;/em&gt;
+                next website!
+            &lt;/h2&gt;
+            &lt;a class="btn btn-primary btn-xl" href="https://startbootstrap.com/theme/stylish-portfolio/"&gt;Download
+                Now!&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+    &lt;!-- Portfolio--&gt;
+    &lt;section class="content-section" id="portfolio"&gt;
+        &lt;div class="container px-4 px-lg-5"&gt;
+            &lt;div class="content-section-heading text-center"&gt;
+                &lt;h3 class="text-secondary mb-0"&gt;Portfolio&lt;/h3&gt;
+                &lt;h2 class="mb-5"&gt;Recent Projects&lt;/h2&gt;
+            &lt;/div&gt;
+            &lt;div class="row gx-0"&gt;
+                &lt;div class="col-lg-6"&gt;
+                    &lt;a class="portfolio-item" href="#!"&gt;
+                        &lt;div class="caption"&gt;
+                            &lt;div class="caption-content"&gt;
+                                &lt;div class="h2"&gt;Stationary&lt;/div&gt;
+                                &lt;p class="mb-0"&gt;A yellow pencil with envelopes on a clean, blue backdrop!&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;img class="img-fluid" src="assets/img/portfolio-1.jpg" alt="..." /&gt;
+                    &lt;/a&gt;
+                &lt;/div&gt;
+                &lt;div class="col-lg-6"&gt;
+                    &lt;a class="portfolio-item" href="#!"&gt;
+                        &lt;div class="caption"&gt;
+                            &lt;div class="caption-content"&gt;
+                                &lt;div class="h2"&gt;Ice Cream&lt;/div&gt;
+                                &lt;p class="mb-0"&gt;A dark blue background with a colored pencil, a clip, and a tiny ice
+                                    cream cone!&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;img class="img-fluid" src="assets/img/portfolio-2.jpg" alt="..." /&gt;
+                    &lt;/a&gt;
+                &lt;/div&gt;
+                &lt;div class="col-lg-6"&gt;
+                    &lt;a class="portfolio-item" href="#!"&gt;
+                        &lt;div class="caption"&gt;
+                            &lt;div class="caption-content"&gt;
+                                &lt;div class="h2"&gt;Strawberries&lt;/div&gt;
+                                &lt;p class="mb-0"&gt;Strawberries are such a tasty snack, especially with a little sugar on
+                                    top!&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;img class="img-fluid" src="assets/img/portfolio-3.jpg" alt="..." /&gt;
+                    &lt;/a&gt;
+                &lt;/div&gt;
+                &lt;div class="col-lg-6"&gt;
+                    &lt;a class="portfolio-item" href="#!"&gt;
+                        &lt;div class="caption"&gt;
+                            &lt;div class="caption-content"&gt;
+                                &lt;div class="h2"&gt;Workspace&lt;/div&gt;
+                                &lt;p class="mb-0"&gt;A yellow workspace with some scissors, 
+                                pencils, and other objects.&lt;/p&gt;
+                            &lt;/div&gt;
+                        &lt;/div&gt;
+                        &lt;img class="img-fluid" src="assets/img/portfolio-4.jpg" alt="..." /&gt;
+                    &lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+    &lt;!-- Call to Action--&gt;
+    &lt;section class="content-section bg-primary text-white"&gt;
+        &lt;div class="container px-4 px-lg-5 text-center"&gt;
+            &lt;h2 class="mb-4"&gt;The buttons below are impossible to resist...&lt;/h2&gt;
+            &lt;a class="btn btn-xl btn-light me-4" href="#!"&gt;Click Me!&lt;/a&gt;
+            &lt;a class="btn btn-xl btn-dark" href="#!"&gt;Look at Me!&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;/section&gt;
+    &lt;!-- Map--&gt;
+    &lt;div class="map" id="contact"&gt;
+        &lt;iframe
+            src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,
+            +San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;
+            ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;
+            output=embed"&gt;&lt;/iframe&gt;
+        &lt;br /&gt;
+        &lt;small&gt;&lt;a
+                href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,
+                +Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;
+                sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;
+                t=m&amp;z=15&amp;iwloc=A"&gt;&lt;/a&gt;&lt;/small&gt;
+    &lt;/div&gt;
+    &lt;!-- Footer--&gt;
+    &lt;footer class="footer text-center"&gt;
+        &lt;div class="container px-4 px-lg-5"&gt;
+            &lt;ul class="list-inline mb-5"&gt;
+                &lt;li class="list-inline-item"&gt;
+                    &lt;a class="social-link rounded-circle text-white mr-3" href="#!"&gt;&lt;i
+                            class="icon-social-facebook"&gt;&lt;/i&gt;&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="list-inline-item"&gt;
+                    &lt;a class="social-link rounded-circle text-white mr-3" href="#!"&gt;&lt;i
+                            class="icon-social-twitter"&gt;&lt;/i&gt;&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="list-inline-item"&gt;
+                    &lt;a class="social-link rounded-circle text-white" href="#!"&gt;&lt;
+                    i class="icon-social-github"&gt;&lt;/i&gt;&lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+            &lt;p class="text-muted small mb-0"&gt;Copyright &copy; Your Website 2022&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/footer&gt;
+    &lt;!-- Scroll to Top Button--&gt;
+    &lt;a class="scroll-to-top rounded" href="#page-top"&gt;&lt;i class="fas fa-angle-up"&gt;&lt;/i&gt;&lt;/a&gt;
+    &lt;!-- Bootstrap core JS--&gt;
+    &lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"&gt;&lt;/script&gt;
+    &lt;!-- Core theme JS--&gt;
+    &lt;script src="js/scripts.js"&gt;&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer text-faded text-center py-5">
+        <div class="container">
+            <p class="m-0 small">Copyright &copy; Camilo Mora 2022</p>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>
